@@ -260,7 +260,7 @@ function! niji#highlight(matching_characters, colour_set)
 	" where there is a single extra level of un-styled parentheses.
 	for character_pair in a:matching_characters
 		for each in range(1, len(a:colour_set))
-			execute printf('syntax region Niji_paren%s matchgroup=Niji_paren_level%s start=/%s/ end=/%s/ contains=ALLBUT,%s',
+			execute printf('syntax region Niji_paren%s matchgroup=Niji_paren_level%s start=/%s/ end=/%s/ contains=ALLBUT,racketSymbol,%s',
 			          \ string(each),
 			          \ string(each),
 			          \ character_pair[0],
