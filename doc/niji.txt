@@ -4,8 +4,8 @@ FRONT MATTER                                             *niji-front-matter*
 
      Maintainer: Alastair Touw <alastair@touw.me.uk>
         License: Distributed under the same terms as Vim. See |license|.
-        Version: 1.0.2
-    Last Change: 2013 Jun 02
+        Version: 1.0.3
+    Last Change: 2014 May 31
 
 
 LICENSE                                                       *niji-license*
@@ -27,12 +27,11 @@ CONTENTS                                                     *niji-contents*
       3. Configuration  . . . . . . . . . . . . . . . . |niji-configuration|
            a) ‘g:loaded_niji’ .     . . . . . . . . . . . .  |'loaded_niji'|
            b) ‘g:niji_matching_filetypes’ . . .  |'niji_matching_filetypes'|
-           c) ‘g:niji_match_all_filetypes’  . . |'niji_match_all_filetypes'|
-           d) ‘g:niji_matching_characters’  . . |'niji_matching_characters'|
-           e) Format for custom colour sets . . .   |niji-colour-set-format|
-           f) ‘g:niji_colours’  . . . . . . . . . . . . . . |'niji_colours'|
-           g) ‘g:niji_???_colours’  . . . . . . . . . . |'niji_???_colours'|
-           h) ‘g:niji_weave_colours’  . . . . . . . . |'niji_weave_colours'|
+           c) ‘g:niji_matching_characters’  . . |'niji_matching_characters'|
+           d) Format for custom colour sets . . .   |niji-colour-set-format|
+           e) ‘g:niji_colours’  . . . . . . . . . . . . . . |'niji_colours'|
+           f) ‘g:niji_???_colours’  . . . . . . . . . . |'niji_???_colours'|
+           g) ‘g:niji_weave_colours’  . . . . . . . . |'niji_weave_colours'|
       4. Credit Where It’s Due  . . . . . . . . . . . . . . . |niji-credits|
       5. Contributions  . . . . . . . . . . . . . . . . |niji-contributions|
       6. Version History  . . . . . . . . . . . . . . |niji-version-history|
@@ -135,15 +134,6 @@ You can override this setting by defining your own, for example:
 >
     let g:niji_matching_filetypes = ['lisp', 'ruby', 'python']
 <
-
-
-‘g:niji_match_all_filetypes’                    *'niji_match_all_filetypes'*
-
-If you want Niji to load for all filetypes, just define this variable:
->
-    let g:niji_match_all_filetypes = 1
-<
-
 
 ‘g:niji_matching_characters’                    *'niji_matching_characters'*
 
@@ -303,6 +293,10 @@ project page (http://github.com/amdt/vim-niji).
 VERSION HISTORY                                       *niji-version-history*
 
 Niji follows the Semantic Versioning Specification (http://semver.org).
+
+1.0.3 (Sun May 31, 2014) ~
+
+    * Remove non-functional ‘g:niji_match_all_filetypes’.
 
 1.0.2 (Sun June 2, 2013) ~
 
