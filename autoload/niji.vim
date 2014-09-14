@@ -80,6 +80,35 @@ function! niji#normalised_colours(colour_set)
 	endif
 endfunction
 
+function! niji#hemisu_colours()
+	return {'light_colours': [['246', '#999999'],
+	                        \ ['241', '#777777'],
+	                        \ ['249', '#BBBBBB'],
+	                        \ ['24', '#538192'],
+	                        \ ['64', '#739200'],
+	                        \ ['197', '#FF0055'],
+	                        \ ['52', '#503D15'],
+	                        \ ['197', '#FF0055'],
+	                        \ ['64', '#739200'],
+	                        \ ['24', '#538192'],
+	                        \ ['217', '#FFAFAF'],
+	                        \ ['157', '#BBFFAA'],
+	                        \ ['195', '#CBE4EE']],
+	      \ 'dark_colours': [['241', '#777777'],
+	                       \ ['246', '#999999'],
+	                       \ ['238', '#444444'],
+	                       \ ['116', '#9FD3E6'],
+	                       \ ['149', '#B1D631'],
+	                       \ ['157', '#BBFFAA'],
+	                       \ ['230', '#ECE1C8'],
+	                       \ ['167', '#D65E76'],
+	                       \ ['149', '#B1D631'],
+	                       \ ['116', '#9FD3E6'],
+	                       \ ['88', '#63001C'],
+	                       \ ['58', '#5F5F00'],
+	                       \ ['24', '#005F87']]}
+endfunction
+
 function! niji#solarized_colours()
 	" Solarized (magenta, red, orange, yellow, cyan, violet, blue, green)
 	if g:solarized_degrade == 1
