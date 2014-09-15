@@ -422,6 +422,25 @@ function! niji#base16_grayscale_colours()
 	      \ [s:cterm0F, '#5e5e5e']]
 endfunction
 
+function! niji#base16_greenscreen_colours()
+	if exists('base16colorspace') && base16colorspace == '256'
+		let s:cterm09 = '16'
+		let s:cterm0F = '17'
+	else
+		let s:cterm09 = '09'
+		let s:cterm0F = '14'
+	endif
+
+	return [['01', '#007700'],
+	      \ [s:cterm09, '#009900'],
+	      \ ['03', '#007700'],
+	      \ ['02', '#00bb00'],
+	      \ ['06', '#005500'],
+	      \ ['04', '#009900'],
+	      \ ['05', '#00bb00'],
+	      \ [s:cterm0F, '#005500']]
+endfunction
+
 function! niji#hemisu_colours()
 	return {'light_colours': [['246', '#999999'],
 	                        \ ['241', '#777777'],
