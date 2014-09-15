@@ -346,6 +346,25 @@ function! niji#base16_eighties_colours()
 	      \ [s:cterm0F, '#d27b53']]
 endfunction
 
+function! niji#base16_embers_colours()
+	if exists('base16colorspace') && base16colorspace == '256'
+		let s:cterm09 = '16'
+		let s:cterm0F = '17'
+	else
+		let s:cterm09 = '09'
+		let s:cterm0F = '14'
+	endif
+
+	return [['01', '#826D57'],
+	      \ [s:cterm09, '#828257'],
+	      \ ['03', '#6D8257'],
+	      \ ['02', '#57826D'],
+	      \ ['06', '#576D82'],
+	      \ ['04', '#6D5782'],
+	      \ ['05', '#82576D'],
+	      \ [s:cterm0F, '#825757']]
+endfunction
+
 function! niji#hemisu_colours()
 	return {'light_colours': [['246', '#999999'],
 	                        \ ['241', '#777777'],
