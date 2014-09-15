@@ -80,6 +80,25 @@ function! niji#normalised_colours(colour_set)
 	endif
 endfunction
 
+function! niji#base16_3024_colours()
+	if exists('base16colorspace') && base16colorspace == '256'
+		let s:cterm09 = '16'
+		let s:cterm0F = '17'
+	else
+		let s:cterm09 = '09'
+		let s:cterm0F = '14'
+	endif
+
+	return [['01', '#db2d20'],
+	      \ [s:cterm09, '#e8bbd0'],
+	      \ ['03', '#fded02'],
+	      \ ['02', '#01a252'],
+	      \ ['06', '#b5e4f4'],
+	      \ ['04', '#01a0e4'],
+	      \ ['05', '#a16a94'],
+	      \ [s:cterm0F, '#cdab53']]
+endfunction
+
 function! niji#hemisu_colours()
 	return {'light_colours': [['246', '#999999'],
 	                        \ ['241', '#777777'],
