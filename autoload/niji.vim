@@ -213,6 +213,25 @@ function! niji#base16_atelierseaside_colours()
 	      \ [s:cterm0F, '#e619c3']]
 endfunction
 
+function! niji#base16_bespin_colours()
+	if exists('base16colorspace') && base16colorspace == '256'
+		let s:cterm09 = '16'
+		let s:cterm0F = '17'
+	else
+		let s:cterm09 = '09'
+		let s:cterm0F = '14'
+	endif
+
+	return [['01', '#cf6a4c'],
+	      \ [s:cterm09, '#cf7d34'],
+	      \ ['03', '#f9ee98'],
+	      \ ['02', '#54be0d'],
+	      \ ['06', '#afc4db'],
+	      \ ['04', '#5ea6ea'],
+	      \ ['05', '#9b859d'],
+	      \ [s:cterm0F, '#937121']]
+endfunction
+
 function! niji#hemisu_colours()
 	return {'light_colours': [['246', '#999999'],
 	                        \ ['241', '#777777'],
