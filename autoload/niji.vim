@@ -498,6 +498,25 @@ function! niji#base16_marrakesh_colours()
 	      \ [s:cterm0F, '#b3588e']]
 endfunction
 
+function! niji#base16_mocha_colours()
+	if exists('base16colorspace') && base16colorspace == '256'
+		let s:cterm09 = '16'
+		let s:cterm0F = '17'
+	else
+		let s:cterm09 = '09'
+		let s:cterm0F = '14'
+	endif
+
+	return [['01', '#cb6077'],
+	      \ [s:cterm09, '#d28b71'],
+	      \ ['03', '#f4bc87'],
+	      \ ['02', '#beb55b'],
+	      \ ['06', '#7bbda4'],
+	      \ ['04', '#8ab3b5'],
+	      \ ['05', '#a89bb9'],
+	      \ [s:cterm0F, '#bb9584']]
+endfunction
+
 function! niji#hemisu_colours()
 	return {'light_colours': [['246', '#999999'],
 	                        \ ['241', '#777777'],
