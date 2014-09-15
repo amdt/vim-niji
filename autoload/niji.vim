@@ -137,6 +137,25 @@ function! niji#base16_atelierdune_colours()
 	      \ [s:cterm0F, '#d43552']]
 endfunction
 
+function! niji#base16_atelierforest_colours()
+	if exists('base16colorspace') && base16colorspace == '256'
+		let s:cterm09 = '16'
+		let s:cterm0F = '17'
+	else
+		let s:cterm09 = '09'
+		let s:cterm0F = '14'
+	endif
+
+	return [['01', '#f22c40'],
+	      \ [s:cterm09, '#df5320'],
+	      \ ['03', '#d5911a'],
+	      \ ['02', '#5ab738'],
+	      \ ['06', '#00ad9c'],
+	      \ ['04', '#407ee7'],
+	      \ ['05', '#6666ea'],
+	      \ [s:cterm0F, '#c33ff3']]
+endfunction
+
 function! niji#hemisu_colours()
 	return {'light_colours': [['246', '#999999'],
 	                        \ ['241', '#777777'],
