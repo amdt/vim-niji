@@ -289,6 +289,25 @@ function! niji#base16_chalk_colours()
 	      \ [s:cterm0F, '#deaf8f']]
 endfunction
 
+function! niji#base16_codeschool_colours()
+	if exists('base16colorspace') && base16colorspace == '256'
+		let s:cterm09 = '16'
+		let s:cterm0F = '17'
+	else
+		let s:cterm09 = '09'
+		let s:cterm0F = '14'
+	endif
+
+	return [['01', '#2a5491'],
+	      \ [s:cterm09, '#43820d'],
+	      \ ['03', '#a03b1e'],
+	      \ ['02', '#237986'],
+	      \ ['06', '#b02f30'],
+	      \ ['04', '#484d79'],
+	      \ ['05', '#c59820'],
+	      \ [s:cterm0F, '#c98344']]
+endfunction
+
 function! niji#hemisu_colours()
 	return {'light_colours': [['246', '#999999'],
 	                        \ ['241', '#777777'],
