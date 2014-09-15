@@ -555,6 +555,25 @@ function! niji#base16_ocean_colours()
 	      \ [s:cterm0F, '#ab7967']]
 endfunction
 
+function! niji#base16_paraiso_colours()
+	if exists('base16colorspace') && base16colorspace == '256'
+		let s:cterm09 = '16'
+		let s:cterm0F = '17'
+	else
+		let s:cterm09 = '09'
+		let s:cterm0F = '14'
+	endif
+
+	return [['01', '#ef6155'],
+	      \ [s:cterm09, '#f99b15'],
+	      \ ['03', '#fec418'],
+	      \ ['02', '#48b685'],
+	      \ ['06', '#5bc4bf'],
+	      \ ['04', '#06b6ef'],
+	      \ ['05', '#815ba4'],
+	      \ [s:cterm0F, '#e96ba8']]
+endfunction
+
 function! niji#hemisu_colours()
 	return {'light_colours': [['246', '#999999'],
 	                        \ ['241', '#777777'],
