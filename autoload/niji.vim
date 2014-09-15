@@ -194,6 +194,25 @@ function! niji#base16_atelierlakeside_colours()
 	      \ [s:cterm0F, '#b72dd2']]
 endfunction
 
+function! niji#base16_atelierseaside_colours()
+	if exists('base16colorspace') && base16colorspace == '256'
+		let s:cterm09 = '16'
+		let s:cterm0F = '17'
+	else
+		let s:cterm09 = '09'
+		let s:cterm0F = '14'
+	endif
+
+	return [['01', '#e6193c'],
+	      \ [s:cterm09, '#87711d'],
+	      \ ['03', '#c3c322'],
+	      \ ['02', '#29a329'],
+	      \ ['06', '#1999b3'],
+	      \ ['04', '#3d62f5'],
+	      \ ['05', '#ad2bee'],
+	      \ [s:cterm0F, '#e619c3']]
+endfunction
+
 function! niji#hemisu_colours()
 	return {'light_colours': [['246', '#999999'],
 	                        \ ['241', '#777777'],
