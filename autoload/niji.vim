@@ -650,6 +650,25 @@ function! niji#base16_solarized_colours()
 	      \ [s:cterm0F, '#d33682']]
 endfunction
 
+function! niji#base16_tomorrow_colours()
+	if exists('base16colorspace') && base16colorspace == '256'
+		let s:cterm09 = '16'
+		let s:cterm0F = '17'
+	else
+		let s:cterm09 = '09'
+		let s:cterm0F = '14'
+	endif
+
+	return [['01', '#cc6666'],
+	      \ [s:cterm09, '#de935f'],
+	      \ ['03', '#f0c674'],
+	      \ ['02', '#b5bd68'],
+	      \ ['06', '#8abeb7'],
+	      \ ['04', '#81a2be'],
+	      \ ['05', '#b294bb'],
+	      \ [s:cterm0F, '#a3685a']]
+endfunction
+
 function! niji#hemisu_colours()
 	return {'light_colours': [['246', '#999999'],
 	                        \ ['241', '#777777'],
