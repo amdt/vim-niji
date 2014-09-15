@@ -612,6 +612,25 @@ function! niji#base16_railscasts_colours()
 	      \ [s:cterm0F, '#bc9458']]
 endfunction
 
+function! niji#base16_shapeshifter_colours()
+	if exists('base16colorspace') && base16colorspace == '256'
+		let s:cterm09 = '16'
+		let s:cterm0F = '17'
+	else
+		let s:cterm09 = '09'
+		let s:cterm0F = '14'
+	endif
+
+	return [['01', '#e92f2f'],
+	      \ [s:cterm09, '#e09448'],
+	      \ ['03', '#dddd13'],
+	      \ ['02', '#0ed839'],
+	      \ ['06', '#23edda'],
+	      \ ['04', '#3b48e3'],
+	      \ ['05', '#f996e2'],
+	      \ [s:cterm0F, '#69542d']]
+endfunction
+
 function! niji#hemisu_colours()
 	return {'light_colours': [['246', '#999999'],
 	                        \ ['241', '#777777'],
