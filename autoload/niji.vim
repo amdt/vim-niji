@@ -536,6 +536,25 @@ function! niji#base16_monokai_colours()
 	      \ [s:cterm0F, '#cc6633']]
 endfunction
 
+function! niji#base16_ocean_colours()
+	if exists('base16colorspace') && base16colorspace == '256'
+		let s:cterm09 = '16'
+		let s:cterm0F = '17'
+	else
+		let s:cterm09 = '09'
+		let s:cterm0F = '14'
+	endif
+
+	return [['01', '#bf616a'],
+	      \ [s:cterm09, '#d08770'],
+	      \ ['03', '#ebcb8b'],
+	      \ ['02', '#a3be8c'],
+	      \ ['06', '#96b5b4'],
+	      \ ['04', '#8fa1b3'],
+	      \ ['05', '#b48ead'],
+	      \ [s:cterm0F, '#ab7967']]
+endfunction
+
 function! niji#hemisu_colours()
 	return {'light_colours': [['246', '#999999'],
 	                        \ ['241', '#777777'],
