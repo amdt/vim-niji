@@ -251,6 +251,25 @@ function! niji#base16_brewer_colours()
 	      \ [s:cterm0F, '#b15928']]
 endfunction
 
+function! niji#base16_bright_colours()
+	if exists('base16colorspace') && base16colorspace == '256'
+		let s:cterm09 = '16'
+		let s:cterm0F = '17'
+	else
+		let s:cterm09 = '09'
+		let s:cterm0F = '14'
+	endif
+
+	return [['01', '#fb0120'],
+	      \ [s:cterm09, '#fc6d24'],
+	      \ ['03', '#fda331'],
+	      \ ['02', '#a1c659'],
+	      \ ['06', '#76c7b7'],
+	      \ ['04', '#6fb3d2'],
+	      \ ['05', '#d381c3'],
+	      \ [s:cterm0F, '#be643c']]
+endfunction
+
 function! niji#hemisu_colours()
 	return {'light_colours': [['246', '#999999'],
 	                        \ ['241', '#777777'],
