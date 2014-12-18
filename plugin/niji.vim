@@ -4,8 +4,8 @@
 "  Maintainer: Alastair Touw <alastair@touw.me.uk>
 "     Website: http://github.com/amdt/vim-niji
 "     License: Distributed under the same terms as Vim. See ':h license'.
-"     Version: 1.0.5
-" Last Change: 2014 Aug 11
+"     Version: 1.0.6
+" Last Change: 2014 Dec 18
 "       Usage: See 'doc/niji.txt' or ':help niji' if installed.
 "
 " Niji follows the Semantic Versioning specification (http://semver.org).
@@ -32,7 +32,7 @@ endfunction
 
 augroup niji
 	autocmd!
-	autocmd FileType,BufNewFile,BufReadPost,FilterReadPost,FileReadPost,ColorScheme,BufWinEnter * nested call s:load()
+	autocmd FileType,BufNewFile,BufReadPost,FilterReadPost,FileReadPost,ColorScheme,BufWinEnter,Syntax * nested call s:load()
 augroup END
 
 " vim: set noexpandtab
