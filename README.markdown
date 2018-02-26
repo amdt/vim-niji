@@ -10,6 +10,12 @@ Just install, and you’re good to go. The filetypes, matching characters and
 colours Niji uses are completely configurable (See `:help niji-configuration`
 for details).
 
+Project Status
+--------------
+
+This project is unmaintained and archived. Feel free to exercise your right
+under the license to fork this project.
+
 Screenshot
 ----------
 
