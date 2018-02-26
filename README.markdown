@@ -1,5 +1,4 @@
-Version: 1.0.6  
-Last Change: 2014 Dec 18
+![GitHub tag](https://img.shields.io/github/tag/amdt/vim-niji.svg) ![GitHub last commit (master)](https://img.shields.io/github/last-commit/amdt/vim-niji/master.svg) ![License: Vim](https://img.shields.io/badge/license-Vim-green.svg)
 
 虹
 =
